@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ColourChanger : MonoBehaviour
 {
+    public float interval;
+
     private Renderer renderer;
 
     private float timeRemaining = 0;
@@ -19,7 +21,7 @@ public class ColourChanger : MonoBehaviour
         if (timeRemaining <= 0)
         {
             ChangeColour();
-            timeRemaining += 1f;
+            timeRemaining += interval;
         }
     }
 
