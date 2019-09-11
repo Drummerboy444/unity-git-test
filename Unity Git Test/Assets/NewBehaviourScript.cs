@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Renderer renderer;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        renderer = gameObject.GetComponent<Renderer>();
+        renderer.material.color = Color.red;
     }
 }
